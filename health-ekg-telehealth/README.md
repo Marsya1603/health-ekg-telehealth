@@ -16,7 +16,6 @@ keadaan kosong ditampilkan apa adanya.
 | Admin Puskesmas | Administrasi | Dashboard, pasien, dokter, pengguna, perangkat, sesi, riwayat EKG, laporan |
 | Dokter | Pemantauan klinis | Dashboard, pasien saya, monitoring EKG live, riwayat, catatan |
 | Pasien | Informasi mandiri | Dashboard, EKG saya, riwayat, info perangkat |
-| Network Engineer | Infrastruktur & QoS | NOC dashboard, connectivity, MQTT, QoS, payload analysis, ASCON-128, server health, logs, events |
 
 Hak akses diterapkan di **backend** (middleware role + filter query per
 controller), bukan sekadar menyembunyikan menu. Semua tindakan sensitif
