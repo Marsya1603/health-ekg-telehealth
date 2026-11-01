@@ -1,0 +1,4 @@
+paho-mqtt==1.6.1
+pyascon>=0.1.4
+PyMySQL>=1.1.0
+mysqlclient>=2.2.0 ; platform_system != "Windows"
