@@ -9,7 +9,7 @@ sesuai PRD: ESP32 + Olimex SHIELD-EKG-EMG → MQTT over TCP/IP → Worker Python
 **Prinsip:** tanpa data demo/dummy/simulasi — semua angka dari sumber aktual;
 keadaan kosong ditampilkan apa adanya.
 
-## Empat Role
+## Tiga Role
 
 | Role | Fokus | Menu utama |
 |------|-------|-----------|
