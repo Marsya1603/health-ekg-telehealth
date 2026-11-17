@@ -16,8 +16,6 @@ Proyek ini bertujuan membangun sistem pemantauan aktivitas jantung secara jarak 
 
 ## Tim dan Pembagian Tugas
 
-## Pembagian Tugas Tim
-
 | Nama Anggota | Domain Utama | Rincian Tanggung Jawab (Scope) |
 |---|---|---|
 | Doni Alamsyah | Monitoring & Data Acquisition (Pemantauan & Akuisisi) | Bertanggung jawab pada akuisisi sinyal EKG menggunakan sensor Olimex dan ESP32, serta pengembangan Dashboard Web Telehealth (UI/UX) agar dokter dapat memantau grafik EKG dan BPM secara real-time. |
