@@ -24,7 +24,7 @@ timedatectl
 - Zona waktu.
 
 ## Bukti screenshot
-!(telehealth-ekg-backend/Screenshots/1.png)
+![Tampilan Dashboard](Screenshots/1.png)
 
 ## Catatan
 Jangan tampilkan alamat IP publik atau detail jaringan internal jika dokumentasi akan dipublikasikan ke GitHub.
