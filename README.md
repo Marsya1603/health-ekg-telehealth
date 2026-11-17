@@ -1,13 +1,33 @@
-# Telehealth EKG Monitoring System with ASCON-128 AEAD
+# Telehealth EKG
 
-Sistem pemantauan sinyal Elektrokardiogram (EKG) *real-time* berbasis IoT dengan pengamanan *end-to-end* menggunakan algoritma kriptografi ringan **ASCON-128 AEAD**.
+**Sistem Telehealth EKG Berbasis Sensor Olimex Menggunakan Algoritma Kriptografi Ringan ASCON-128**
 
-## Struktur Direktori
-- `health-ekg-telehealth/` — Aplikasi web dashboard monitoring pasien & dokter.
-- `firmware/esp32_ekg_ascon/` — Kode mikrokontroler ESP32 (akuisisi sinyal 250 Hz, filter Moving Average, deteksi R-Peak BPM, tampilan OLED, dan enkripsi ASCON-128).
-- `server/worker/` — Python MQTT Worker untuk dekripsi ASCON-128, validasi *Authentication Tag*, dan penerusan data ke REST API.
-- `server/config/` — Konfigurasi *reverse proxy* Nginx WebSocket (`/mqtt` ke port `9001`).
-- `dokumentasi/` — Laporan dan dokumentasi pengujian sistem.
+Proyek ini bertujuan membangun sistem pemantauan aktivitas jantung secara jarak jauh menggunakan sensor EKG Olimex dan ESP32. Data EKG dikirimkan ke server untuk diproses, disimpan, dan ditampilkan melalui dashboard web secara real-time.
 
-## Arsitektur Alur Data
-`Arduino (Sensor AD8232)` ➔ `ESP32 (Enkripsi ASCON-128)` ➔ `Cloudflare Tunnel (WSS 443)` ➔ `Nginx (8080/mqtt)` ➔ `Mosquitto Broker (9001/1883)` ➔ `Python Worker (Dekripsi)` ➔ `Web Dashboard`
+## Teknologi
+- Olimex SHIELD-EKG-EMG
+- ESP32
+- MQTT / TCP/IP
+- Laravel REST API
+- MySQL
+- Ubuntu Server, Nginx
+- ASCON-128
+- Cloudflare Tunnel
+
+## Tim dan Pembagian Tugas
+
+## Pembagian Tugas Tim
+
+| Nama Anggota | Domain Utama | Rincian Tanggung Jawab (Scope) |
+|---|---|---|
+| Doni Alamsyah | Monitoring & Data Acquisition (Pemantauan & Akuisisi) | Bertanggung jawab pada akuisisi sinyal EKG menggunakan sensor Olimex dan ESP32, serta pengembangan Dashboard Web Telehealth (UI/UX) agar dokter dapat memantau grafik EKG dan BPM secara real-time. |
+| Muhammad Marsya Nazmul Hakim | System Architecture & Infrastructure (Arsitektur & Infrastruktur) | Bertanggung jawab pada perancangan topologi jaringan Edge-to-Cloud, penyediaan Virtual Private Server (VPS), pembuatan REST API menggunakan Laravel, dan manajemen database MySQL untuk rekam medis historis. |
+| Rafi Zinedine Rahman | Network Security & QoS Analysis (Keamanan & Analisis Performa) | Bertanggung jawab pada konfigurasi MQTT Broker, implementasi enkripsi jalur transmisi (MQTTS) dan eksperimen Payload (E2EE), serta analisis Quality of Service (Delay, Packet Loss, dan Overhead) menggunakan Wireshark. |
+
+## Dokumentasi
+
+Repository ini berisi dokumentasi konfigurasi server, deployment Laravel, pengelolaan database, REST API, monitoring, dan infrastruktur sistem Telehealth EKG.
+
+## Repository
+
+Dikembangkan sebagai proyek akademik mahasiswa Politeknik Negeri Jakarta.
