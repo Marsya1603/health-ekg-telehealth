@@ -24,7 +24,7 @@ timedatectl
 - Zona waktu.
 
 ## Bukti screenshot
-Simpan output OS, jaringan, disk, dan memori ke `Screenshots/1`.
+![Tampilan Dashboard](Screenshots/1.png)
 
 ## Catatan
 Jangan tampilkan alamat IP publik atau detail jaringan internal jika dokumentasi akan dipublikasikan ke GitHub.
